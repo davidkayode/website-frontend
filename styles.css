@@ -1,0 +1,271 @@
+html {
+  scroll-behavior: smooth;
+  font-family: "Nunito", "san-serif";
+}
+
+body {
+  margin: 0;
+  background: -webkit-linear-gradient(
+    to bottom,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #b9b6a5
+  );
+  background: linear-gradient(to bottom, #eaeaea, #dbdbdb, #f2f2f2, #b9b6a5);
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: large;
+}
+
+header {
+  width: 100%;
+  background-color: rgb(94, 131, 160);
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header nav ul li {
+  float: left;
+}
+
+header a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+header a:hover {
+  background-color: rgb(104, 141, 214);
+  color: rgb(10, 6, 1);
+}
+
+.footer-container {
+  display: flex;
+  background-color: rgb(94, 131, 160);
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.footer-child {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.footer-child:first-child > p {
+  margin-right: auto;
+}
+
+.footer-child:last-child {
+  justify-content: flex-end;
+  padding-top: 0.5rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  font-size: xx-large;
+}
+
+footer a:not(:last-child){
+  margin-right: 2.5rem;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: rgb(249, 248, 248);
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro img {
+  width: 250px;
+  height: 250px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+ .intro p{
+  text-align: center;
+  padding: 0 1rem;
+ }
+
+.section-heading {
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.skill-child {
+  text-align: center;
+}
+
+.skills ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills li {
+  padding: 5px;
+  font-size: large;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.card {
+  border-radius: 8px;
+  margin-bottom: 40px;
+  width: 60%;
+  height: fit-content;
+  box-shadow: 0 1rem 1.5rem 0 rgba(55, 54, 54, 0.3);
+  transition: 0.3s;
+}
+
+.card div:last-child {
+  margin-top: 2rem;
+  padding: 0 0.8rem 0 0.8rem;
+}
+
+.card:hover {
+  box-shadow: 0 1.2rem 1rem 0 rgba(26, 26, 54, 0.3);
+}
+
+.experience-each {
+  padding: 2px 16px;
+  background-color: rgb(94, 131, 160);
+  text-align: center;
+  align-items: center;
+}
+
+.certificates {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.certificates > div {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 300px;
+  filter: grayscale(85%);
+  transition: 0.5s ease-in-out;
+  align-items: center;
+}
+
+.certificates > div:hover {
+  filter: grayscale(0%);
+}
+
+.certificates > div > div > p {
+  text-align: center;
+}
+
+/* smaller screens */
+@media only screen and (max-width: 1070px) {
+  #cert-here,
+  #skills-here {
+    margin-bottom: 0;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+
+  .card {
+    border-radius: 8px;
+    margin-bottom: 40px;
+    width: 60%;
+    height: fit-content;
+    box-shadow: 0 1rem 1.5rem 0 rgba(55, 54, 54, 0.3);
+    transition: 0.3s;
+  }
+
+  .card div:last-child {
+    margin-top: 2rem;
+    padding: 0 0.8rem 0 0.8rem;
+  }
+
+  .certificates {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .certificates > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .footer-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-container:last-child{
+    justify-self: center;
+  }
+
+  footer a {
+    font-size: x-large;
+  }
+
+  footer a:not(:last-child){
+    margin-right: 2.5rem;
+  }
+
+
+  footer a:hover {
+    text-decoration: none;
+    color: rgb(249, 248, 248);
+  }
+}
